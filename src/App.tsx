@@ -24,6 +24,15 @@ import MeanMedianModeRangeCalculator from './pages/MeanMedianModeRangeCalculator
 import PermutationCombinationCalculator from './pages/PermutationCombinationCalculator';
 import ZScoreCalculator from './pages/ZScoreCalculator';
 import ConfidenceIntervalCalculator from './pages/ConfidenceIntervalCalculator';
+import TriangleCalculator from './pages/TriangleCalculator';
+import VolumeCalculator from './pages/VolumeCalculator';
+import SlopeCalculator from './pages/SlopeCalculator';
+import AreaCalculator from './pages/AreaCalculator';
+import DistanceCalculator from './pages/DistanceCalculator';
+import CircleCalculator from './pages/CircleCalculator';
+import PythagoreanTheoremCalculator from './pages/PythagoreanTheoremCalculator';
+import RightTriangleCalculator from './pages/RightTriangleCalculator';
+import SurfaceAreaCalculator from './pages/SurfaceAreaCalculator';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
@@ -57,6 +66,15 @@ export default function App() {
           <Route path="math/permutation-combination" element={<PermutationCombinationCalculator />} />
           <Route path="math/z-score" element={<ZScoreCalculator />} />
           <Route path="math/confidence-interval" element={<ConfidenceIntervalCalculator />} />
+          <Route path="math/triangle" element={<TriangleCalculator />} />
+          <Route path="math/volume" element={<VolumeCalculator />} />
+          <Route path="math/slope" element={<SlopeCalculator />} />
+          <Route path="math/area" element={<AreaCalculator />} />
+          <Route path="math/distance" element={<DistanceCalculator />} />
+          <Route path="math/circle" element={<CircleCalculator />} />
+          <Route path="math/surface-area" element={<SurfaceAreaCalculator />} />
+          <Route path="math/pythagorean-theorem" element={<PythagoreanTheoremCalculator />} />
+          <Route path="math/right-triangle" element={<RightTriangleCalculator />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="privacy" element={<Privacy />} />

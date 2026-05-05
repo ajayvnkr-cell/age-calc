@@ -58,15 +58,15 @@ export default function MathCalculators() {
         ];
       case 'geometry':
         return [
-          { name: 'Triangle Calculator', path: '#' },
-          { name: 'Volume Calculator', path: '#' },
-          { name: 'Slope Calculator', path: '#' },
-          { name: 'Area Calculator', path: '#' },
-          { name: 'Distance Calculator', path: '#' },
-          { name: 'Circle Calculator', path: '#' },
-          { name: 'Surface Area Calculator', path: '#' },
-          { name: 'Pythagorean Theorem Calculator', path: '#' },
-          { name: 'Right Triangle Calculator', path: '#' },
+          { name: 'Triangle Calculator', path: '/math/triangle' },
+          { name: 'Volume Calculator', path: '/math/volume' },
+          { name: 'Slope Calculator', path: '/math/slope' },
+          { name: 'Area Calculator', path: '/math/area' },
+          { name: 'Distance Calculator', path: '/math/distance' },
+          { name: 'Circle Calculator', path: '/math/circle' },
+          { name: 'Surface Area Calculator', path: '/math/surface-area' },
+          { name: 'Pythagorean Theorem Calculator', path: '/math/pythagorean-theorem' },
+          { name: 'Right Triangle Calculator', path: '/math/right-triangle' },
         ];
       default: return [];
     }
@@ -148,7 +148,7 @@ export default function MathCalculators() {
   );
 }
 
-function CalcButton({ val, onClick, op, special, className }: { val: string, onClick: (val: string) => void, op?: boolean, special?: boolean, className?: string }) {
+function CalcButton({ val, onClick, op, special, className }: { key?: string | number, val: string, onClick: (val: string) => void, op?: boolean, special?: boolean, className?: string }) {
   const isOp = op;
   const isSpecial = special;
   

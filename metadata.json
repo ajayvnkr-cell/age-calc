@@ -1,6 +1,0 @@
-{
-  "name": "Age Calculator",
-  "description": "Calculates age from birth date and provides About, Contact, and Privacy pages.",
-  "requestFramePermissions": [],
-  "majorCapabilities": []
-}
